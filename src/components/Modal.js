@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { useTransition, animated } from "react-spring";
+import { useTransition, animated } from "@react-spring/web";
 
 import playButton from "../assets/play.svg";
 import pauseButton from "../assets/pause.svg";
