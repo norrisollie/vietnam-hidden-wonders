@@ -1,6 +1,8 @@
-@import "./swiper.scss";
+@import "./mixins.scss";
+ @import "./swiper.scss";
 @import "./slide-navigation.scss";
 @import "./slide.scss";
+@import "./modal.scss";
 
 body {
   margin: 0;
@@ -9,6 +11,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body * {
+  box-sizing: border-box;
 }
 
 code {
