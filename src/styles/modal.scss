@@ -20,7 +20,7 @@
     width: 100%;
     height: 100%;
     backdrop-filter: blur(10px);
-    background-color: #FFFFFF12;
+    background-color: #ffffff12;
   }
 
   &__column-left {
@@ -33,7 +33,8 @@
     overflow: hidden;
     width: 65%;
 
-    & img, & video {
+    & img,
+    & video {
       width: 100%;
     }
   }
@@ -62,7 +63,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding-left: 40px;
-    width: 35%
+    width: 35%;
   }
 
   &__close {
