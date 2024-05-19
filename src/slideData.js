@@ -1,32 +1,39 @@
+import background1 from "./assets/slide-1.jpg"
+import background2 from "./assets/slide-2.jpg"
+import background3 from "./assets/slide-3.jpg"
+
 export const slideData = [
   {
-    title: "Slide 1",
-    subtitle: "Subtitle 1",
-    cta: "See More 1",
-    location: "location 1",
-    background: "https://placehold.co/600x400/000000/FFF",
+    title: "HIDDEN WONDERS",
+    subtitle: "Unveil the Secrets of Ancient Caves",
+    cta: "See more",
+    ctaColour: "#D5CEBD",
+    location: "Sơn Động District, Vietnam",
+    background: background1,
     modalAsset: "https://placehold.co/600x400/000000/FFF",
     modalText: "Descend into a world of towering stalactites and shimmering pools. Explore Vietnam's labyrinthine cave systems, where ancient secrets and breathtaking beauty collide.",
-    modalCTA: "See More"
+    modalCTA: "Find out more"
   },
   {
-    title: "Slide 2",
-    subtitle: "Subtitle 2",
-    cta: "See More 2",
-    location: "location 2",
-    background: "https://placehold.co/600x400/000000/FFF",
+    title: "CULINARY DELIGHTS",
+    subtitle: "A Feast for the Senses: Explore Vietnam's Street Food Scene",
+    cta: "See more",
+    ctaColour: "#FCA776",
+    location: "Phu Quoc, Vietnam",
+    background: background2,
     modalAsset: "https://placehold.co/600x400/000000/FFF",
-    modalText: "Descend into a world of towering stalactites and shimmering pools. Explore Vietnam's labyrinthine cave systems, where ancient secrets and breathtaking beauty collide.",
-    modalCTA: "See More"
+    modalText: "Immerse yourself in the vibrant energy of Vietnam's bustling night markets. Savour an explosion of flavours as you navigate a maze of food stalls, each one a testament to Vietnam's rich culinary heritage.",
+    modalCTA: "Find out more"
   },
   {
-    title: "Slide 3",
-    subtitle: "Subtitle 3",
-    cta: "See More 3",
-    location: "location 3",
-    background: "https://placehold.co/600x400/000000/FFF",
+    title: "PARADISE FOUND",
+    subtitle: "Cruise Through Paradise: Discover the Enchantment of Ha Long Bay",
+    cta: "See more",
+    ctaColour: "#D6CFA3",
+    location: "Hạ Long Bay, Vietnam",
+    background: background3,
     modalAsset: "https://placehold.co/600x400/000000/FFF",
-    modalText: "Descend into a world of towering stalactites and shimmering pools. Explore Vietnam's labyrinthine cave systems, where ancient secrets and breathtaking beauty collide.",
-    modalCTA: "See More"
+    modalText: "Embark on a journey through a mystical landscape of towering limestone pillars and emerald waters. Cruise through the awe-inspiring Ha Long Bay.",
+    modalCTA: "Find out more"
   }
 ]
