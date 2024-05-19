@@ -16,12 +16,14 @@ function SlideContent(props) {
   const {
     location,
     background,
+    background_x2,
     title,
     subtitle,
     cta,
     ctaColour,
     isVideo,
     modalAsset,
+    modalAsset_x2,
     modalText,
     modalCTA,
     modalCTAColour,
@@ -33,6 +35,7 @@ function SlideContent(props) {
     showModal,
     isVideo,
     modalAsset,
+    modalAsset_x2,
     modalText,
     modalCTA,
     modalCTAColour,
@@ -43,7 +46,12 @@ function SlideContent(props) {
   return (
     <div className="slide">
       <div className="slide__background">
-        <img src={background} aria-hidden alt="" />
+        <img
+          src={background}
+          srcset={`${background_x2} 2x`}
+          aria-hidden
+          alt=""
+        />
       </div>
       <div className="slide__wrapper">
         <div className="slide__title">{title}</div>

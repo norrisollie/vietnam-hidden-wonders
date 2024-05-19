@@ -10,11 +10,12 @@ export default function Modal(props) {
     showModal,
     isVideo,
     modalAsset,
+    modalAsset_x2,
     modalText,
     modalCTA,
     modalCTAColour,
     closeModal,
-    modalAssetPoster,
+    modalAssetPoster_x2,
     modalCTALink,
   } = props;
 
@@ -58,7 +59,7 @@ export default function Modal(props) {
                     <>
                       <video
                         src={modalAsset}
-                        poster={modalAssetPoster}
+                        poster={modalAssetPoster_x2}
                         ref={ref}
                         onPlay={() => setIsPlaying(true)}
                         onPause={() => setIsPlaying(false)}
@@ -79,7 +80,11 @@ export default function Modal(props) {
                       </button>
                     </>
                   ) : (
-                    <img src={modalAsset} alt="" />
+                    <img
+                      src={modalAsset}
+                      srcset={`${modalAsset_x2} 2x`}
+                      alt=""
+                    />
                   )}
                 </div>
                 <div className="modal__column-right">
