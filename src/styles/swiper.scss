@@ -1,0 +1,26 @@
+// change default swiper variables
+:root {
+  --swiper-theme-color: #d9d9d9 !important;
+  --swiper-pagination-bullet-size: 14px;
+  --swiper-pagination-bottom: 14px;
+  --swiper-pagination-bullet-horizontal-gap: 8px;
+  --swiper-pagination-bullet-inactive-color: #D9D9D9;
+  --swiper-pagination-bullet-inactive-opacity: 0.3;
+}
+
+.swiper {
+  height: 100vh;
+}
+
+.carousel {
+  &__slide {
+    background-color: #000;
+    color: #FFF;
+    height: 100vh;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

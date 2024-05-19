@@ -1,0 +1,42 @@
+// mixin for defauly arrow styles
+@mixin nav-arrow-styles {
+  position: absolute;
+  top: 50%;
+  width: 25px;
+  height: 36px;
+  z-index: 999;
+  background-color: transparent;
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:not(.arrow--disabled):hover {
+    opacity: 0.8;
+  }
+}
+
+.arrow {
+  &__left {
+    @include nav-arrow-styles();
+    left: 90px;
+    background-image: url(../assets/arrow-left.svg);
+  }
+
+  &__right {
+    @include nav-arrow-styles();
+    right: 90px;
+    background-image: url(../assets/arrow-right.svg);
+
+  }
+  &--disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+}
+
+// for when navigation arrows are disabled
+.swiper-button-disabled {
+  opacity: 0.3;
+  cursor: default;
+}
