@@ -61,8 +61,7 @@ export const slideData = [
     background: background3,
     background_x2: background3_x2,
     modalAsset: video,
-    modalAssetPoster: card3,
-    modalAssetPoster_x2: card3_x2,
+    modalAssetPoster: card3_x2,
     modalText:
       "Embark on a journey through a mystical landscape of towering limestone pillars and emerald waters. Cruise through the awe-inspiring Ha Long Bay.",
     modalCTA: "Find out more",

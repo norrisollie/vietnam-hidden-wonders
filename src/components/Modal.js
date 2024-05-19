@@ -15,7 +15,7 @@ export default function Modal(props) {
     modalCTA,
     modalCTAColour,
     closeModal,
-    modalAssetPoster_x2,
+    modalAssetPoster,
     modalCTALink,
   } = props;
 
@@ -59,7 +59,7 @@ export default function Modal(props) {
                     <>
                       <video
                         src={modalAsset}
-                        poster={modalAssetPoster_x2}
+                        poster={modalAssetPoster}
                         ref={ref}
                         onPlay={() => setIsPlaying(true)}
                         onPause={() => setIsPlaying(false)}
