@@ -13,6 +13,7 @@ export default function Modal(props) {
     modalCTAColour,
     closeModal,
     modalAssetPoster,
+    modalCTALink,
   } = props;
 
   const [isPlaying, setIsPlaying] = useState(false);
@@ -32,6 +33,9 @@ export default function Modal(props) {
   return (
     <div className="modal__container">
       <div className="modal__background"></div>
+      <button className="modal__close" onClick={closeModal}>
+        <img src={closeButton} aria-hidden alt="" />
+      </button>
       <div className="modal__column-left">
         {isVideo ? (
           <>
@@ -60,13 +64,16 @@ export default function Modal(props) {
         )}
       </div>
       <div className="modal__column-right">
-        <button className="modal__close" onClick={closeModal}>
-          <img src={closeButton} aria-hidden alt="" />
-        </button>
         <div className="modal__text">{modalText}</div>
-        <div className="modal__cta" style={{ backgroundColor: modalCTAColour }}>
+        <a
+          href={modalCTALink}
+          target="_blank"
+          className="modal__cta"
+          style={{ backgroundColor: modalCTAColour }}
+          rel="noreferrer"
+        >
           {modalCTA}
-        </div>
+        </a>
       </div>
     </div>
   );

@@ -22,6 +22,7 @@ function SlideContent(props) {
     modalCTA,
     modalCTAColour,
     modalAssetPoster,
+    modalCTALink,
   } = props;
 
   const modalData = {
@@ -31,6 +32,7 @@ function SlideContent(props) {
     modalCTA,
     modalCTAColour,
     modalAssetPoster,
+    modalCTALink,
   };
 
   const swiper = useSwiper();
